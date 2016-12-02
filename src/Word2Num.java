@@ -43,7 +43,7 @@ public class Word2Num {
                 saveSum(number, i);
             }else if ((number=getMultipliers(words[i])) != -1){
                 saveMultiply(number, i);
-            }else if (words[i].equalsIgnoreCase("a") && getMultipliers(getNextWord(words,i)) != -1){//@todo: will throw outOfBound exception
+            }else if (words[i].equalsIgnoreCase("a") && getMultipliers(getNextWord(words,i)) != -1){
                 saveSum(1, i);
             }else if (headTracked && words[i].equalsIgnoreCase("and")){
                 //if we are currently tracking the head and we find "and", then we treat this as special case
